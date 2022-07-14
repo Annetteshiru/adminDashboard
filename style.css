@@ -10,13 +10,13 @@ body{
     position:absolute;
     height:50px;
     width:100%;
-    background-color: #ff4500;
+    background-color: #f57e20;/*#ff4500;*/
     z-index: 5;
 }
 .sidebar{
     position:absolute;
-    width:100%;
-    background-color: #ff0000;
+    width:200px;
+    background-color: #07b00d;
     height:100vh;
     z-index: 4;
     padding-top:50px;
@@ -50,7 +50,7 @@ body{
         font-size: 30px;
     }
 }
-/*Extra small devices (portrait phons,*/
+/*Extra small devices (portrait phones,*/
 @media (max-width:575.98px) {
     .sidebar{
         width:50px;
@@ -115,4 +115,106 @@ body{
     .sidebar ul li i{
         font-size: 20px;
     }
+}
+.header{
+    position:absolute;
+    height:50px;
+    width:100%;
+    background-color: #ff4500;
+}
+.sidebar ul li a{
+    color:#fff;
+    text-decoration: none;
+}
+.main-content{
+    padding-top:50px;
+    background-attachment: fixed;
+}
+
+/*small devices (landscape phones, 57)*/
+@media screen and (min-width:576px){
+    .sidebar{
+        width:50px;
+    }
+    .sidebar  ul li{
+        text-align:center;
+    }
+    .sidebar ul li span:nth-child(2){
+        display:none;
+    }
+    .sidebar ul li i{
+        font-size:30px;
+    }
+    .margin-content{
+        margin-left:50px;
+    }
+}
+/*Extra small devices (portrait phones,*/
+@media (max-width: 575.98px) {
+    .sidebar{
+        width:50px;
+    }
+    .sidebar ul li{
+        text-align:left;
+    }
+    .sidebar ul lispan:nth-child(2){
+        display:none;
+    }
+    .sidebar ul li i{
+        font-size:20px;
+    }
+    .main-content{
+        margin-left:50px;
+    }
+}
+/*Medium devices (tablets,768px and */
+@media (min-width:768px) {
+    .sidebar{
+        width:100px;
+    }
+    .sidebar ul li{
+        text-align:center;
+    }
+    .sidebar ul li span:nth-child(2) {
+        display:none;
+    }
+    .sidebar ul li i{
+        font-size:30px;
+    }
+    .main-content{
+        margin-left:100px;
+    }
+}
+@media (min-width: 992px) {
+    .sidebar{
+        width:200px;
+    }
+    .sidebar ul li{
+        text-align:left;
+    }
+    .sidebar ul li span:nth-child(2){
+        display:inline;
+    }
+    .sidebar ul li i{
+        font-size:20px;
+    }
+    .main-content{
+        margin-left:200px;
+    }
+    .sidebar ul li a{
+        color:#ffffff;
+        text-decoration:none;
+    }
+    .main-content{
+        padding-top:50px;
+    }
+    .content-fluid{
+        padding-top:10px;
+    }
+    .col-lg-3{
+        padding-top:10px;
+    }
+    /*Tablet view*/
+
+
 }
